@@ -1,0 +1,94 @@
+.poppins {
+    font-family: 'Poppins', sans-serif;
+}
+
+.quicksand {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.gradient-dark {
+      background: linear-gradient(135deg, #000000, #1a1a1a);
+    }
+
+    .gradient-primary {
+      background: linear-gradient(90deg, #6366f1, #8b5cf6);
+    }
+
+    .gradient-primary-text {
+      background: linear-gradient(90deg, #6366f1, #8b5cf6);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .blur-bg {
+      filter: blur(100px);
+      opacity: 0.2;
+      position: absolute;
+      border-radius: 50%;
+    }
+    .hover-opacity {
+  transition: opacity 0.3s ease-in-out;
+}
+.card:hover .hover-opacity {
+  opacity: 1 !important;
+}
+
+
+    .pulse {
+      animation: pulse 3s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 0.2; }
+      50% { opacity: 0.5; }
+    }
+
+    .transition-smooth {
+      transition: all 0.3s ease-in-out;
+    }
+
+    .animate-bounce {
+      animation: bounce 2s infinite;
+    }
+
+    @keyframes bounce {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+
+    .btn-gradient {
+      background: linear-gradient(90deg, #6366f1, #8b5cf6);
+      color: #fff;
+      border: none;
+    }
+
+    .btn-gradient:hover {
+      box-shadow: 0 0 15px rgba(139, 92, 246, 0.6);
+    }
+
+    .social-icons a {
+      color: #6c757d;
+      font-size: 1.5rem;
+    }
+
+    .social-icons a:hover {
+      color: #6366f1;
+    }
+
+      .gradient-primary-text {
+    background: linear-gradient(90deg, #6366f1, #8b5cf6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .transition-smooth {
+    transition: all 0.3s ease-in-out;
+  }
+
+  .navbar-nav .nav-link:hover {
+    color: #6366f1 !important;
+  }

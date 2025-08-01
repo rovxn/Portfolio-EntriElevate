@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Rovan Thomas John - Portfolio Website</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Quicksand:wght@500;700&display=swap"
+        rel="stylesheet">
+    <link href="style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="bg-dark">
+
+        <!-- Navbar -->
+        <nav class="navbar bg-dark navbar-expand-md fixed-top py-3 transition-smooth">
+            <div class="container">
+                <a class="navbar-brand text-light poppins fw-bold" href="#">Rovn</a>
+                <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link text-light poppins" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light poppins" href="#projects">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light poppins" href="#resume">Resume</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light poppins" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section id="home"
+            class="min-vh-100 d-flex align-items-center justify-content-center position-relative overflow-hidden">
+
+            <!-- Background gradient -->
+            <div class="position-absolute top-0 start-0 end-0 bottom-0 gradient-dark opacity-50 z-n1"></div>
+
+            <!-- Animated background elements -->
+            <div class="position-absolute top-25 start-25 w-25 h-25 bg-primary blur-bg pulse"></div>
+            <div class="position-absolute bottom-25 end-25 w-50 h-50 bg-primary blur-bg pulse"
+                style="animation-delay: 1s;"></div>
+
+            <div class="container text-center position-relative">
+                <h1 class="fw-bold display-3 poppins mb-3">
+                    <span class="d-block text-white">Hello, I'm</span>
+                    <span class="gradient-primary-text">Rovan</span>
+                </h1>
+                <p class="fs-4 text-white poppins mb-3">Full Stack Developer & UI/UX Designer</p>
+                <p class="fs-5 text-white mb-4 mx-auto quicksand" style="max-width: 700px;">
+                    I create beautiful, responsive web applications with modern technologies.
+                    Passionate about clean code, user experience, and bringing ideas to life.
+                </p>
+
+                <!-- CTA Buttons -->
+                <div class="d-flex quicksand flex-column flex-sm-row justify-content-center gap-3 mb-5">
+                    <button class="btn btn-gradient px-4 py-2 transition-smooth"
+                        onclick="scrollToSection('#portfolio')">
+                        View My Work
+                    </button>
+                    <button class="btn btn-outline-primary px-4 py-2 transition-smooth"
+                        onclick="scrollToSection('#contact')">
+                        Get In Touch
+                    </button>
+                </div>
+
+                <!-- Social Icons -->
+                <div class="d-flex justify-content-center gap-4 social-icons mb-5">
+                    <a href="#"><i class="bi bi-github text-white"></i></a>
+                    <a href="#"><i class="bi bi-linkedin text-white"></i></a>
+                    <a href="#"><i class="bi bi-envelope-fill text-white"></i></a>
+                </div>
+
+                <!-- Scroll Indicator -->
+                <button onclick="scrollToSection('#about')"
+                    class="btn btn-link text-white animate-bounce transition-smooth">
+                    <i class="bi bi-arrow-down"></i>
+                </button>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section id="about" class="py-5 quicksand text-light">
+            <div class="container px-4">
+                <div class="text-center mb-5">
+                    <h2 class="fw-bold display-5 poppins mb-3">
+                        About <span class="gradient-primary-text">Me</span>
+                    </h2>
+                    <p class="lead text-white mx-auto" style="max-width: 600px;">
+                        Passionate developer with 5+ years of experience creating digital solutions
+                    </p>
+                </div>
+
+                <div class="row gy-5 align-items-center">
+                    <!-- About Text -->
+                    <div class="col-lg-6">
+                        <p class="text-white mb-4">
+                            I'm a passionate full-stack developer who loves crafting digital experiences
+                            that make a difference. With a background in computer science and a keen eye
+                            for design, I bridge the gap between functionality and aesthetics.
+                        </p>
+                        <p class="text-white mb-4">
+                            When I'm not coding, you'll find me exploring new technologies, contributing
+                            to open-source projects, or hiking in the mountains. I believe in continuous
+                            learning and staying updated with the latest industry trends.
+                        </p>
+                        <div class="d-flex flex-wrap gap-2 pt-3">
+                            <!-- Tech tags -->
+                            <span
+                                class="badge rounded-pill bg-primary-subtle border border-primary text-primary fw-medium">React</span>
+                            <span
+                                class="badge rounded-pill bg-primary-subtle border border-primary text-primary fw-medium">TypeScript</span>
+                            <span
+                                class="badge rounded-pill bg-primary-subtle border border-primary text-primary fw-medium">Node.js</span>
+                            <span
+                                class="badge rounded-pill bg-primary-subtle border border-primary text-primary fw-medium">Python</span>
+                            <span
+                                class="badge rounded-pill bg-primary-subtle border border-primary text-primary fw-medium">PostgreSQL</span>
+                            <span
+                                class="badge rounded-pill bg-primary-subtle border border-primary text-primary fw-medium">Docker</span>
+                        </div>
+                    </div>
+
+                    <!-- Skills Cards -->
+                    <div class="col-lg-6">
+                        <div class="row g-4">
+                            <!-- Skill 1 -->
+                            <div class="col-sm-6">
+                                <div
+                                    class="card h-100 bg-dark border-secondary border-opacity-25 hover-shadow transition-smooth">
+                                    <div class="card-body text-center">
+                                        <div class="d-flex align-items-center justify-content-center mb-3 bg-primary-subtle rounded-3"
+                                            style="width: 48px; height: 48px; margin: 0 auto;">
+                                            <i class="bi bi-code-slash text-primary fs-5"></i>
+                                        </div>
+                                        <h5 class="poppins card-title text-white fw-semibold">Frontend Development</h5>
+                                        <p class="card-text text-white small">React, TypeScript, Next.js, Tailwind CSS
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Skill 2 -->
+                            <div class="col-sm-6">
+                                <div
+                                    class="card h-100 bg-dark border-secondary border-opacity-25 hover-shadow transition-smooth">
+                                    <div class="card-body text-center">
+                                        <div class="d-flex align-items-center justify-content-center mb-3 bg-primary-subtle rounded-3"
+                                            style="width: 48px; height: 48px; margin: 0 auto;">
+                                            <i class="bi bi-rocket-takeoff text-primary fs-5"></i>
+                                        </div>
+                                        <h5 class="poppins card-title text-white fw-semibold">Backend Development</h5>
+                                        <p class="card-text text-white small">Node.js, Python, PostgreSQL, MongoDB</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Skill 3 -->
+                            <div class="col-sm-6">
+                                <div
+                                    class="card h-100 bg-dark border-secondary border-opacity-25 hover-shadow transition-smooth">
+                                    <div class="card-body text-center">
+                                        <div class="d-flex align-items-center justify-content-center mb-3 bg-primary-subtle rounded-3"
+                                            style="width: 48px; height: 48px; margin: 0 auto;">
+                                            <i class="bi bi-palette text-primary fs-5"></i>
+                                        </div>
+                                        <h5 class="poppins card-title text-white fw-semibold">UI/UX Design</h5>
+                                        <p class="card-text text-white small">Figma, Adobe Creative Suite, Prototyping
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Skill 4 -->
+                            <div class="col-sm-6">
+                                <div
+                                    class="card h-100 bg-dark border-secondary border-opacity-25 hover-shadow transition-smooth">
+                                    <div class="card-body text-center">
+                                        <div class="d-flex align-items-center justify-content-center mb-3 bg-primary-subtle rounded-3"
+                                            style="width: 48px; height: 48px; margin: 0 auto;">
+                                            <i class="bi bi-people text-primary fs-5"></i>
+                                        </div>
+                                        <h5 class="poppins card-title text-white fw-semibold">Collaboration</h5>
+                                        <p class="card-text text-white small">Git, Agile, Team Leadership, Mentoring</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section id="projects" class="py-5 bg-dark ">
+            <div class="container">
+                <!-- Section Header -->
+                <div class="text-center mb-5">
+                    <h2 class="fw-bold text-white poppins display-5">
+                        My <span class="text-primary">Projects</span>
+                    </h2>
+                    <p class="text-white quicksand mx-auto" style="max-width: 600px;">
+                        A showcase of projects that demonstrate my skills and passion for development
+                    </p>
+                </div>
+
+                <!-- Projects Grid -->
+                <div class="row g-4">
+
+                    <!-- Project Card -->
+                    <div class="col-md-6 col-lg-4 quicksand">
+                        <div class="card border-0 shadow-sm h-100">
+                            <div class="position-relative overflow-hidden">
+                                <img src="./images/LabKTU.png"
+                                    class="card-img-top" alt="E-Commerce Platform">
+                                <div
+                                    class="position-absolute bottom-0 start-0 end-0 bg-dark bg-opacity-50 p-3 d-flex gap-2 justify-content-start opacity-0 hover-opacity">
+                                    <a href="#" class="btn btn-sm btn-primary d-flex align-items-center">
+                                        <i class="bi bi-box-arrow-up-right me-1"></i> Live
+                                    </a>
+                                    <a href="#" class="btn btn-sm btn-outline-light d-flex align-items-center">
+                                        <i class="bi bi-github me-1"></i> Code
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title poppins fw-bold">E-Commerce Platform</h5>
+                                <p class="card-text text-mutes small">
+                                    A full-stack e-commerce solution built with React, Node.js, and PostgreSQL. Features
+                                    include user authentication, payment processing, and admin dashboard.
+                                </p>
+                                <div class="d-flex flex-wrap gap-1 mt-2">
+                                    <span
+                                        class="badge bg-primary bg-opacity-10 text-primary border border-primary-subtle">React</span>
+                                    <span
+                                        class="badge bg-primary bg-opacity-10 text-primary border border-primary-subtle">Node.js</span>
+                                    <span
+                                        class="badge bg-primary bg-opacity-10 text-primary border border-primary-subtle">PostgreSQL</span>
+                                    <span
+                                        class="badge bg-primary bg-opacity-10 text-primary border border-primary-subtle">Stripe</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Card -->
+                    <div class="col-md-6 col-lg-4 quicksand">
+                        <div class="card border-0 shadow-sm h-100">
+                            <div class="position-relative overflow-hidden">
+                                <img src="./images/BTC-Pay.png"
+                                    class="card-img-top" alt="E-Commerce Platform">
+                                <div
+                                    class="position-absolute bottom-0 start-0 end-0 bg-dark bg-opacity-50 p-3 d-flex gap-2 justify-content-start opacity-0 hover-opacity">
+                                    <a href="#" class="btn btn-sm btn-primary d-flex align-items-center">
+                                        <i class="bi bi-box-arrow-up-right me-1"></i> Live
+                                    </a>
+                                    <a href="#" class="btn btn-sm btn-outline-light d-flex align-items-center">
+                                        <i class="bi bi-github me-1"></i> Code
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title poppins fw-bold">E-Commerce Platform</h5>
+                                <p class="card-text text-mutes small">
+                                    A full-stack e-commerce solution built with React, Node.js, and PostgreSQL. Features
+                                    include user authentication, payment processing, and admin dashboard.
+                                </p>
+                                <div class="d-flex flex-wrap gap-1 mt-2">
+                                    <span
+                                        class="badge bg-primary bg-opacity-10 text-primary border border-primary-subtle">React</span>
+                                    <span
+                                        class="badge bg-primary bg-opacity-10 text-primary border border-primary-subtle">Node.js</span>
+                                    <span
+                                        class="badge bg-primary bg-opacity-10 text-primary border border-primary-subtle">PostgreSQL</span>
+                                    <span
+                                        class="badge bg-primary bg-opacity-10 text-primary border border-primary-subtle">Stripe</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Card -->
+                    <div class="col-md-6 col-lg-4 quicksand">
+                        <div class="card border-0 shadow-sm h-100">
+                            <div class="position-relative overflow-hidden">
+                                <img src="./images/OneSub.png"
+                                    class="card-img-top" alt="E-Commerce Platform">
+                                <div
+                                    class="position-absolute bottom-0 start-0 end-0 bg-dark bg-opacity-50 p-3 d-flex gap-2 justify-content-start opacity-0 hover-opacity">
+                                    <a href="#" class="btn btn-sm btn-primary d-flex align-items-center">
+                                        <i class="bi bi-box-arrow-up-right me-1"></i> Live
+                                    </a>
+                                    <a href="#" class="btn btn-sm btn-outline-light d-flex align-items-center">
+                                        <i class="bi bi-github me-1"></i> Code
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title poppins fw-bold">E-Commerce Platform</h5>
+                                <p class="card-text text-mutes small">
+                                    A full-stack e-commerce solution built with React, Node.js, and PostgreSQL. Features
+                                    include user authentication, payment processing, and admin dashboard.
+                                </p>
+                                <div class="d-flex flex-wrap gap-1 mt-2">
+                                    <span
+                                        class="badge bg-primary bg-opacity-10 text-primary border border-primary-subtle">React</span>
+                                    <span
+                                        class="badge bg-primary bg-opacity-10 text-primary border border-primary-subtle">Node.js</span>
+                                    <span
+                                        class="badge bg-primary bg-opacity-10 text-primary border border-primary-subtle">PostgreSQL</span>
+                                    <span
+                                        class="badge bg-primary bg-opacity-10 text-primary border border-primary-subtle">Stripe</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resume -->
+        <section id="resume" class="py-5 bg-dark poppins">
+            <div class="container">
+                <div class="mx-auto" style="max-width: 960px;">
+                    <!-- Section Header -->
+                    <div class="text-center mb-5">
+                        <h2 class="fw-bold text-white display-5">
+                            My <span class="text-primary">Resume</span>
+                        </h2>
+                        <p class="text-white fs-5 mb-4">
+                            Discover my professional journey and achievements
+                        </p>
+                        <a href="resume.pdf" download class="btn btn-primary d-inline-flex align-items-center">
+                            <i class="bi bi-download me-2"></i> Download Resume
+                        </a>
+                    </div>
+
+                    <div class="row g-4">
+                        <!-- Experience Column -->
+                        <div class="col-lg-6">
+                            <div class="d-flex align-items-center mb-4">
+                                <div class="bg-primary bg-opacity-10 rounded-circle d-flex align-items-center justify-content-center me-3"
+                                    style="width: 40px; height: 40px;">
+                                    <i class="bi bi-briefcase text-primary"></i>
+                                </div>
+                                <h3 class="h5 text-white fw-bold mb-0">Experience</h3>
+                            </div>
+
+                            <!-- Experience Cards -->
+                            <div class="mb-4">
+                                <div class="card border-0 shadow-sm mb-3">
+                                    <div class="card-body">
+                                        <h5 class="card-title mb-1 fw-semibold">Full Stack Developer</h5>
+                                        <h6 class="text-primary mb-2">Vexvo Private Limited</h6>
+                                        <div class="small text-muted d-flex flex-column flex-sm-row mb-2 gap-2">
+                                            <span><i class="bi bi-geo-alt me-1"></i> Ernakulam, KL</span>
+                                            <span><i class="bi bi-calendar3 me-1"></i> 2022 - Present</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- Education Column -->
+                        <div class="col-lg-6">
+                            <div class="d-flex align-items-center mb-4">
+                                <div class="bg-primary bg-opacity-10 rounded-circle d-flex align-items-center justify-content-center me-3"
+                                    style="width: 40px; height: 40px;">
+                                    <i class="bi bi-mortarboard text-primary"></i>
+                                </div>
+                                <h3 class="h5 text-white fw-bold mb-0">Education</h3>
+                            </div>
+
+                            <!-- Education Cards -->
+                            <div class="mb-4">
+                                <div class="card border-0 shadow-sm mb-3">
+                                    <div class="card-body">
+                                        <h5 class="card-title mb-1 fw-semibold">Bachelors in Technology</h5>
+                                        <h6 class="text-primary mb-2">Muthoot Insitute of Technology and Science</h6>
+                                        <div class="small text-muted d-flex flex-column flex-sm-row mb-2 gap-2">
+                                            <span><i class="bi bi-geo-alt me-1"></i> Ernakulam, KL</span>
+                                            <span><i class="bi bi-calendar3 me-1"></i> 2021 - 2025</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer id="contact" class="py-5 bg-dark poppins">
+            <div class="container">
+                <div class="mx-auto" style="max-width: 1140px;">
+
+                    <!-- Contact Section -->
+                    <div class="text-center mb-5">
+                        <h2 class="text-white fw-bold display-5">
+                            Get In <span class="text-primary">Touch</span>
+                        </h2>
+                        <p class="text-white fs-5 mx-auto" style="max-width: 640px;">
+                            I'm always interested in new opportunities and collaborations.
+                            Let's discuss how we can work together!
+                        </p>
+                    </div>
+
+                    <!-- Contact Info Cards -->
+                    <div class="card border-0 shadow-sm mb-5 mx-auto" style="max-width: 640px;">
+                        <div class="card-body py-4 px-4">
+                            <div class="row text-center g-4">
+                                <div class="col-sm-4">
+                                    <a href="mailto:thomjoh995@gmail.com" class="text-decoration-none text-dark">
+                                        <div class="bg-primary bg-opacity-10 rounded-circle d-flex justify-content-center align-items-center mx-auto mb-2"
+                                            style="width: 48px; height: 48px;">
+                                            <i class="bi bi-envelope text-primary fs-5"></i>
+                                        </div>
+                                        <p class="mb-0 fw-medium">thomjoh995@gmail.com</p>
+                                    </a>
+                                </div>
+                                <div class="col-sm-4">
+                                    <a href="tel:+15551234567" class="text-decoration-none text-dark">
+                                        <div class="bg-primary bg-opacity-10 rounded-circle d-flex justify-content-center align-items-center mx-auto mb-2"
+                                            style="width: 48px; height: 48px;">
+                                            <i class="bi bi-telephone text-primary fs-5"></i>
+                                        </div>
+                                        <p class="mb-0 fw-medium">+91 98460 98130</p>
+                                    </a>
+                                </div>
+                                <div class="col-sm-4">
+                                    <a href="#" class="text-decoration-none text-dark">
+                                        <div class="bg-primary bg-opacity-10 rounded-circle d-flex justify-content-center align-items-center mx-auto mb-2"
+                                            style="width: 48px; height: 48px;">
+                                            <i class="bi bi-geo-alt text-primary fs-5"></i>
+                                        </div>
+                                        <p class="mb-0 fw-medium">Ernakulam, KL</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CTA Button -->
+                    <div class="text-center mb-5">
+                        <a href="mailto:thomjoh995@gmail.com" class="btn btn-primary btn-lg px-5">
+                            Let's Work Together
+                        </a>
+                    </div>
+
+                    <!-- Footer Bottom -->
+                    <div class="border-top pt-4">
+                        <div class="d-flex flex-column flex-md-row align-items-center justify-content-between gap-3">
+
+                            <!-- Branding -->
+                            <div class="text-center text-md-start">
+                                <a href="#top" class="fw-bold fs-5 text-primary text-decoration-none d-block mb-1">
+                                    Portfolio
+                                </a>
+                                <p class="mb-0 small text-white">
+                                    Made with <i class="bi bi-heart-fill text-danger mx-1"></i> by Rovan Thomas John
+                                </p>
+                                <p class="text-white small mb-0">© 2025 All rights reserved.</p>
+                            </div>
+
+                            <!-- Social Links -->
+                            <div class="d-flex gap-3">
+                                <a href="#"
+                                    class="d-flex align-items-center justify-content-center rounded-circle bg-primary bg-opacity-10 text-primary"
+                                    style="width: 40px; height: 40px;" aria-label="GitHub">
+                                    <i class="bi bi-github"></i>
+                                </a>
+                                <a href="#"
+                                    class="d-flex align-items-center justify-content-center rounded-circle bg-primary bg-opacity-10 text-primary"
+                                    style="width: 40px; height: 40px;" aria-label="LinkedIn">
+                                    <i class="bi bi-linkedin"></i>
+                                </a>
+                                <a href="mailto:thomjoh995@gmail.com"
+                                    class="d-flex align-items-center justify-content-center rounded-circle bg-primary bg-opacity-10 text-primary"
+                                    style="width: 40px; height: 40px;" aria-label="Email">
+                                    <i class="bi bi-envelope-fill"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
